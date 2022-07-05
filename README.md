@@ -9,9 +9,6 @@ Use the package manager [npm](https://nodejs.org/en/download/) to install the de
 ```bash
 npm install
 
-# initialize eslint
-npx eslint --init
-
 # initialize husky
 npx husky-init
 ```

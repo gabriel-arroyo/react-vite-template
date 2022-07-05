@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-#!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo '🏗️👷 Styling, testing and building your project before committing'
@@ -10,6 +9,10 @@ npm run format ||
             Prettier Format Failed. Run npm run format, add changes and try commit again.';
     false;
 )
+
+echo 'Adding format changes to git stage'
+
+git add .
 
 # Check Prettier standards
 npm run check-format ||
